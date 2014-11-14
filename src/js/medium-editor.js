@@ -601,7 +601,7 @@ else if (typeof define === 'function' && define.amd) {
             if (this.keepToolbarAlive !== true && !this.options.disableToolbar) {
 
                 newSelection = window.getSelection();
-                if (newSelection.toString().trim() === '' ||
+                if (newSelection.toString() === '' ||
                     (this.options.allowMultiParagraphSelection === false && this.hasMultiParagraphs()) ||
                     this.selectionInContentEditableFalse()) {
                     this.hideToolbarActions();
